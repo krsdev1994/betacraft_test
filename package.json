@@ -4,7 +4,9 @@
   "description": "This is a test for betacraft",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "./node_modules/.bin/migrate",
+    "dev": "nodemon index.js"
   },
   "keywords": [
     "Test",
@@ -13,5 +15,15 @@
     "API"
   ],
   "author": "Kashyap",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "joi": "^17.7.0",
+    "migrate-mongoose": "^4.0.0",
+    "mongoose": "^6.8.1",
+    "mongoose-timestamp": "^0.6.0",
+    "nodemon": "^2.0.20"
+  }
 }
